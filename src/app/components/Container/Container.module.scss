@@ -1,0 +1,18 @@
+@import "../../scss/vars.scss";
+@import "../../scss/mixins.scss";
+
+.container {
+  margin: 0 auto;
+  max-width: var($mobile-media);
+
+  @include media_rule($tablet-media) {
+    max-width: $tablet;
+    width: $tablet;
+    // padding: 0 40px;
+  }
+  @include media_rule($desktop-media) {
+    max-width: $desktop;
+    width: $desktop;
+    // padding: 0 40px;
+  }
+}

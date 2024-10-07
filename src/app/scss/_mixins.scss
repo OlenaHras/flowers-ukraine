@@ -1,0 +1,7 @@
+@import "./vars";
+
+@mixin media_rule($break_point) {
+  @media screen and (min-width: $break_point) {
+    @content;
+  }
+}
