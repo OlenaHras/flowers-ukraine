@@ -18,41 +18,22 @@
   }
 }
 
-.item {
-  &__label {
-    position: relative;
-    display: block;
-    width: 101px;
-    margin-right: 12px;
+.list {
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
     color: var(--white-text);
-    line-height: 18px;
-    font-size: 16px;
-
-    &::after {
-      content: url(../../../assets/svg/select-arrow.svg);
-      position: absolute;
-      right: 0;
-      top: 0;
-
-      width: 50px;
-      height: 100%;
-      //   line-height: 38px;
-
-      text-align: center;
-      //   font-size: 24px;
-      //   border-left: 1px solid #3c1c78;
-      //   z-index: -1;
-    }
   }
+}
 
-  &__select {
-    position: relative;
-    background-color: var(--main-text-color);
-    color: var(--accent-color);
-    border: none;
-    outline: none;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
+.link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.authList {
+  gap: 26px;
 }
